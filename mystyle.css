@@ -1,0 +1,177 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(212, 145, 250);
+}
+
+.birthdayCard {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    transition: .7s;
+}
+
+.birthdayCard:hover {
+    transform: perspective(2500px) rotate(5deg);
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,.25), 0 10px 100px rgba(0,0,0,0.5);
+}
+
+.birthdayCard:hover .cardFront {
+    transform: rotateY(-160deg);
+}
+
+.birthdayCard:hover .front-text {
+    display: none;
+}
+
+.cardFront {
+    position: relative;
+    background-color: white;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2), 30px 0 50px rgba(0,0,0,0.1);
+    transition: .7s;
+}
+
+.cardInside {
+    position: absolute;
+    z-index:-1;
+    background-color: white;
+    width: 250px;
+    height: 350px;
+    left: 0;
+    top: 0;
+    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
+}
+
+.happy, .bday {
+    position: relative;
+    font-family:;
+    text-align: center;
+    backface-visibility: hidden;
+    font-size: 25px;
+    color: rgb(107, 2, 77);
+}
+
+.tagline {
+    position: relative;
+    font-family:;
+    text-align: center;
+    backface-visibility: hidden;
+    font-size: 15px;
+    top: 70px;
+    color: rgb(107, 2, 77);
+}
+
+.happy {
+    top: 118px;
+}
+
+.bday {
+    position: relative;
+    top: 85px;
+}
+
+.wrap-deco {
+    position: absolute;
+    top: -230px;
+    left: -200px;
+}
+
+.decorations {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    border: 3px solid;
+    border-radius: 100%;
+}
+
+.decorations:before, .decorations:after, .decorationsTwo:before, .decorationsTwo:after {
+    content: "";
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    width:0;
+    height:0;
+}
+
+.decorations:before {
+    border-top: 40px solid rgb(250, 122, 129);
+    top: 298px;
+    left: 196px;
+    transform: rotate(-4deg);
+}
+
+.decorations:after {
+    border-top: 40px solid rgb(250, 214, 122);
+    top: 288px;
+    left: 255px;
+    transform: rotate(-15deg);
+    backface-visibility: hidden;
+}
+
+.decorationsTwo:before {
+    border-top: 40px solid rgb(172, 252, 154);
+    top: 269px;
+    left: 311px;
+    transform: rotate(-28deg);
+}
+
+.decorationsTwo:after {
+    border-top: 40px solid rgb(177, 207, 252);
+    top: 234px;
+    left: 357px;
+    transform: rotate(-47deg);
+}
+
+.inside-text {
+    position: relative;
+    text-align: center;
+}
+
+.happy2 {
+    color: rgb(107, 2, 77);
+}
+
+.bday2 {
+    color: rgb(107, 2, 77);
+}
+
+p {
+    font-family: 'Brush Script MT', cursive;
+    
+}
+
+.wishes {
+    text-align: center;
+    margin: 25px
+}
+
+.line {
+    position: relative;
+    font-family:;
+    text-align: center;
+    backface-visibility: hidden;
+    font-size: 20px;
+    color: rgb(252, 164, 244);
+    top:5px;
+}
+
+.bunny {
+    text-align: center;
+    
+}
+
+.name {
+    margin-left: 70px;
+}
+
+
